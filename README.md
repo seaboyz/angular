@@ -18,13 +18,11 @@ Component-specific styles - Define the look and fell.
 ![](./images/npm-bootstrap.png)
 ![](./images/angular-json-bootrap.png)
 
-#### `<app-root></app-root>`
-This is replaced by the angular.
-![](./images/app-root.png)
-![](./images/app.component.ts.png)
+
 
 #### `main.ts` `bootstrap` `AppModule` `app.component.ts`
-Angular start sequence
+Angular start sequence and how does it work
+* `main.ts` is the entry point 
 
 * `AppModule` knows bootrstrap after `main.ts` loading
 ![](./images/main.ts.png)
@@ -33,6 +31,13 @@ Angular start sequence
 ![](./images/app.module.ts.png)
 
 * `bootstrap` is ready for using in `app.component.ts`
-![](./images/app.component.ts.png)
 
+* `app.compoent.html` is injected into `<app-root>`
+![](./images/app.component.ts.png)
+![](./images/app.component.html.png)
+
+* `<app-root></app-root>`
+![](./images/app-root.png)
+![](./images/app.component.html.png)
+![](./images/browser.png)
 
