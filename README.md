@@ -17,3 +17,7 @@ Component-specific styles - Define the look and fell.
 #### bootstrap
 ![](./images/npm-bootstrap.png)
 ![](./images/angular-json-bootrap.png)
+
+#### `<root-app></root-app>`
+This is replaced by the angular.
+![](./images/app-root.png)
