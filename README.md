@@ -59,4 +59,16 @@ The relative path or absolute URL of a template file for an Angular component. I
 ![](./images/Screen%20Shot%202022-04-30%20at%201.57.39%20PM.png)
 
 #### Use CLI to create a component
+cli
 ![](./images/Screen%20Shot%202022-04-30%20at%203.51.25%20PM.png)
+`server.component.ts`
+![](./images/Screen%20Shot%202022-04-30%20at%204.27.57%20PM.png)
+`app.module.ts`
+![](./images/Screen%20Shot%202022-04-30%20at%204.28.18%20PM.png)
+browser
+![](./images/Screen%20Shot%202022-04-30%20at%204.27.19%20PM.png)
+
+
+#### Use `template`
+![](./images/Screen%20Shot%202022-04-30%20at%206.55.28%20PM.png)
+`template` or `templateUrl` is a must.
