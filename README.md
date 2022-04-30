@@ -4,23 +4,23 @@ This the Angular learning notes, and a ecommerce example from angular office web
 
 https://angular.io/start
 
-#### Componnent
+## Componnent
 
 A component class - Handles data and functionality.
 An HTML template - Determines the UI.
 Component-specific styles - Define the look and fell.
 
 
-#### RoadMap
+## RoadMap
 ![](./images/road-map.png)
 
-#### bootstrap
+## bootstrap
 ![](./images/npm-bootstrap.png)
 ![](./images/angular-json-bootrap.png)
 
 
 
-#### `main.ts` `bootstrap` `AppModule` `app.component.ts`
+## `main.ts` -> `bootstrap`-> `AppModule`-> `app.component.ts`
 Angular start sequence and how does it work
 * `main.ts` is the entry point 
 
