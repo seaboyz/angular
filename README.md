@@ -2,6 +2,10 @@
 
 This the Angular learning notes, and a ecommerce example from angular office website.
 
+#### bootstrap(css)
+![](./images/npm-bootstrap.png)
+![](./images/angular-json-bootrap.png)
+
 https://angular.io/start
 
 #### Componnent
@@ -14,14 +18,10 @@ Component-specific styles - Define the look and fell.
 ## RoadMap
 ![](./images/road-map.png)
 
-#### bootstrap
-![](./images/npm-bootstrap.png)
-![](./images/angular-json-bootrap.png)
 
+#### Angular start sequence and how does it work
+`main.ts` -> `bootstrap`-> `AppModule`-> `app.component.ts`
 
-
-#### `main.ts` -> `bootstrap`-> `AppModule`-> `app.component.ts`
-Angular start sequence and how does it work
 * `main.ts` is the entry point 
 
 * `AppModule` knows bootrstrap after `main.ts` loading
@@ -57,3 +57,6 @@ The relative path or absolute URL of a template file for an Angular component. I
 5. then import it to the `app.module.ts`, then it can be used in `app.component.html`
 ![](./images/Screen%20Shot%202022-04-30%20at%201.56.10%20PM.png)
 ![](./images/Screen%20Shot%202022-04-30%20at%201.57.39%20PM.png)
+
+#### Use CLI to create a component
+![](./images/Screen%20Shot%202022-04-30%20at%203.51.25%20PM.png)
