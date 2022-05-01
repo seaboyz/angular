@@ -75,3 +75,9 @@ browser
 
 #### use `styles` or `styleUrls`
 ![](./images/Screen%20Shot%202022-04-30%20at%207.03.48%20PM.png)
+
+#### attribute selector
+![](images/Screen%20Shot%202022-04-30%20at%207.28.33%20PM.png)
+![](./images/Screen%20Shot%202022-04-30%20at%207.24.22%20PM.png)
+![](./images/Screen%20Shot%202022-04-30%20at%204.27.57%20PM.png)
+![](images/Screen%20Shot%202022-04-30%20at%207.25.54%20PM.png)
