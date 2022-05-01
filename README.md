@@ -72,3 +72,6 @@ browser
 #### Use `template`
 ![](./images/Screen%20Shot%202022-04-30%20at%206.55.28%20PM.png)
 `template` or `templateUrl` is a must.
+
+#### use `styles` or `styleUrls`
+![](./images/Screen%20Shot%202022-04-30%20at%207.03.48%20PM.png)
