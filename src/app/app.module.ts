@@ -8,6 +8,8 @@ import { ServerComponent } from "./server/server.component";
 import { ServersComponent } from './servers/servers.component';
 import { SuccessAlertComponent } from "./success-alert/app-success-alert.component";
 import { WarningAlertComponent } from "./warning-alert/warning-alert.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button'
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { WarningAlertComponent } from "./warning-alert/warning-alert.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

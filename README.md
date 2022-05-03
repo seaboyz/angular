@@ -87,3 +87,7 @@ browser
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.39%20AM.png)
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.38%20AM.png)
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.46%20AM.png)
+
+#### property binding
+![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.21.50%20AM.png)
+![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.21.58%20AM.png)
