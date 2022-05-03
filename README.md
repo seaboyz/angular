@@ -91,3 +91,6 @@ browser
 #### property binding
 ![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.21.50%20AM.png)
 ![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.21.58%20AM.png)
+
+#### property binding vs string interpolation
+![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.55.27%20AM.png)
