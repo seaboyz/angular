@@ -81,3 +81,9 @@ browser
 ![](./images/Screen%20Shot%202022-04-30%20at%207.24.22%20PM.png)
 ![](./images/Screen%20Shot%202022-04-30%20at%204.27.57%20PM.png)
 ![](images/Screen%20Shot%202022-04-30%20at%207.25.54%20PM.png)
+
+#### string intepolation
+![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.34%20AM.png)
+![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.39%20AM.png)
+![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.38%20AM.png)
+![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.46%20AM.png)
