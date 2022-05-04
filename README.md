@@ -94,3 +94,17 @@ browser
 
 #### property binding vs string interpolation
 ![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.55.27%20AM.png)
+
+### Data Biding
+#### event biding
+![](./images/event-binding/Screen%20Shot%202022-05-04%20at%208.10.14%20AM.png)
+![](./images/event-binding/Screen%20Shot%202022-05-04%20at%208.10.14%20AM.png)
+![](./images/event-binding/Screen%20Shot%202022-05-04%20at%208.10.14%20AM.png)
+![](./images/event-binding/Screen%20Shot%202022-05-04%20at%208.10.14%20AM.png)
+
+#### two-way-data-binding
+![]()
+![]()
+![]()
+![]()
+![]()
