@@ -10,9 +10,9 @@ https://angular.io/start
 
 #### Componnent
 
-A component class - Handles data and functionality.
-An HTML template - Determines the UI.
-Component-specific styles - Define the look and fell.
+* A component class - Handles data and functionality.
+* An HTML template - Determines the UI.
+* Component-specific styles - Define the look and fell.
 
 
 ## RoadMap
