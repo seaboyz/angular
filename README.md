@@ -19,7 +19,9 @@ https://angular.io/start
 ![](./images/road-map.png)
 
 
-#### Angular start sequence and how does it work
+### Angular start sequence and how does it work
+1. Everything starts from `main.ts`
+![](images/how-it-works/Screen%20Shot%202022-05-17%20at%209.57.51%20AM.png)
 `main.ts` -> `bootstrap`-> `AppModule`-> `app.component.ts`
 
 * `main.ts` is the entry point 
