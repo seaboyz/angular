@@ -2,14 +2,13 @@
 
 This the Angular learning notes, and a ecommerce example from angular office website.
 
-#### bootstrap(css)
+* bootstrap(css)
 ![](./images/npm-bootstrap.png)
 ![](./images/angular-json-bootrap.png)
 
 https://angular.io/start
 
-#### Componnent
-
+Basic Angular structure(component)
 * A component class - Handles data and functionality.
 * An HTML template - Determines the UI.
 * Component-specific styles - Define the look and fell.
@@ -20,28 +19,50 @@ https://angular.io/start
 
 
 ### Angular start sequence and how does it work
-1. Everything starts from `main.ts`
+
+#### 1. `main.ts`
+```typescript
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+```
+  * Everything starts from `main.ts`
 ![](images/how-it-works/Screen%20Shot%202022-05-17%20at%209.57.51%20AM.png)
 `main.ts` -> `bootstrap`-> `AppModule`-> `app.component.ts`
 
-* `main.ts` is the entry point 
+  * `main.ts` is the entry point 
 
-* `AppModule` knows bootrstrap after `main.ts` loading
+  * `main.ts` bootstraps the application with `AppModule`
+![](images/how-it-works/Screen%20Shot%202022-05-17%20at%2010.32.44%20AM.png)
 ![](./images/main.ts.png)
 
-* `app.component.ts` knows bootstrap after `AppModule` loading
+#### 2. `app.module.ts` - `AppModule`
+
+* `AppModule` is the root module of the application.
+* `AppModule` boostraps the `AppCompnent`
 ![](./images/app.module.ts.png)
+```typescript
+  bootstrap: [AppComponent]
+```
 
-* `bootstrap` is ready for using in `app.component.ts`
+#### 3. `app.component.ts` - `AppComponent`
+* `AppComponent` is the root component of the application.
 
-* `app.compoent.html` is injected into `<app-root>`
+
+#### 4. `app.compoent.html` and `app.component.css` are injected into `app.component.ts`
 ![](./images/app.component.ts.png)
 ![](./images/app.component.html.png)
 
-* `<app-root></app-root>`
+#### 5. `selector: 'app-root'`  <---> `<app-root></app-root>`
+*  selector is the tag that will be used to identify the component other template.
+
+#### 6. templateUrl: './app.component.html' <---> `<app-root></app-root>`
+* templateUrl is the path to the template file that will be used to render `<app-root></app-root>`
 ![](./images/app-root.png)
 ![](./images/app.component.html.png)
 ![](./images/browser.png)
+
+#### 7. component vs template vs module
+![](images/how-it-works/Lsofi.png) 
 
 ### How to create a component and use it
 ![](./images/server.component.ts.png)
