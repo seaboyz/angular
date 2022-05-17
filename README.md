@@ -1,3 +1,27 @@
+- [Angular](#angular)
+    - [RoadMap](#roadmap)
+    - [Angular start sequence and how does it work](#angular-start-sequence-and-how-does-it-work)
+      - [1. `main.ts`](#1-maints)
+      - [2. `app.module.ts` - `AppModule`](#2-appmodulets---appmodule)
+      - [3. `app.component.ts` - `AppComponent`](#3-appcomponentts---appcomponent)
+      - [4. `app.compoent.html` and `app.component.css` are injected into `app.component.ts`](#4-appcompoenthtml-and-appcomponentcss-are-injected-into-appcomponentts)
+      - [5. `selector: 'app-root'`  <---> `<app-root></app-root>`](#5-selector-app-root------app-rootapp-root)
+      - [6. templateUrl: './app.component.html' <---> `<app-root></app-root>`](#6-templateurl-appcomponenthtml-----app-rootapp-root)
+      - [7. component vs template vs module](#7-component-vs-template-vs-module)
+    - [How to create a component and use it](#how-to-create-a-component-and-use-it)
+        - [@NgModel](#ngmodel)
+        - [Declaration {}](#declaration-)
+      - [Use CLI to create a component](#use-cli-to-create-a-component)
+      - [Use `template`](#use-template)
+      - [use `styles` or `styleUrls`](#use-styles-or-styleurls)
+      - [attribute selector](#attribute-selector)
+      - [string intepolation](#string-intepolation)
+      - [property binding](#property-binding)
+      - [property binding vs string interpolation](#property-binding-vs-string-interpolation)
+    - [Data Biding](#data-biding)
+      - [event biding](#event-biding)
+      - [two-way-data-binding](#two-way-data-binding)
+
 # Angular
 
 This the Angular learning notes, and a ecommerce example from angular office website.
@@ -14,11 +38,12 @@ Basic Angular structure(component)
 * Component-specific styles - Define the look and fell.
 
 
-## RoadMap
+### RoadMap
 ![](./images/road-map.png)
 
 
 ### Angular start sequence and how does it work
+`main.ts  >>   app.Module.ts  >>  app.component.ts  >>  index.html  >>  app.component.html `
 
 #### 1. `main.ts`
 ```typescript
@@ -38,11 +63,13 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 #### 2. `app.module.ts` - `AppModule`
 
 * `AppModule` is the root module of the application.
-* `AppModule` boostraps the `AppCompnent`
+* `AppModule` boostraps the with applicaition with `AppCompnent`
+***This is where Angular replace the `<app-root></app-root>` tag in `index.html`
 ![](./images/app.module.ts.png)
 ```typescript
   bootstrap: [AppComponent]
 ```
+- it is the way to tell angular witch component you should be aware of when the application starts.
 
 #### 3. `app.component.ts` - `AppComponent`
 * `AppComponent` is the root component of the application.
@@ -66,18 +93,24 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 ### How to create a component and use it
 ![](./images/server.component.ts.png)
-1. `@Component`
-Decorator that marks a class as an Angular component and provides configuration metadata that determines how the component should be processed, instantiated, and used at runtime.
-2. `templateUrl`
-The relative path or absolute URL of a template file for an Angular component. If provided, do not supply an inline template using `template`.
-3.  A `selector` is used to identify each component uniquely into the component tree, and it also defines how the current component is represented in the HTML DOM.
-`Component` = `template` + `selector`
+1. ####  `@Component`
+   - Decorator that marks a class as an Angular component and provides configuration ***metadata*** that determines how the component should be processed, instantiated, and used at runtime.
+2. #### `templateUrl`
+   * The relative path or absolute URL of a template file for an Angular component. If provided, do not supply an inline template using `template`.
+3. #### `selector` 
+   - is used to identify each component uniquely into the component tree, and it also defines how the current component is represented in the HTML DOM.
+   - 
+4. #### `Component` = `template` + `selector`
 
-4. Decalre the component in the module
-`ServerComponent` the class name
+5. #### Decalre the component in the module
+   ##### @NgModel
+    - The `@NgModel` decorator marks a class as an Angular component and provides configuration metadata that determines how the component should be processed, instantiated, and used at runtime.
+   ##### Declaration {}
+    - `declarations:{ AppComponent, ServerComponent}`(this is the way to tell angular that this component is used in the application)
+    - `ServerComponent` the class name
 ![](./images/server.component-and-app.module.png)
 
-5. then import it to the `app.module.ts`, then it can be used in `app.component.html`
+6. #### Then import it to the `app.module.ts`, then it can be used in `app.component.html`
 ![](./images/Screen%20Shot%202022-04-30%20at%201.56.10%20PM.png)
 ![](./images/Screen%20Shot%202022-04-30%20at%201.57.39%20PM.png)
 
