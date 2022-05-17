@@ -100,7 +100,10 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 3. #### `selector` 
    - is used to identify each component uniquely into the component tree, and it also defines how the current component is represented in the HTML DOM.
    - 
-4. #### `Component` = `template` + `selector`
+4. #### Component Vs Selector Vs Template
+   - Component(AppComponent) is the referce to the component in the application(typescript code).
+   - Selector is the reference to the component in the HTML.
+   - Template is the HTML that will be rendered to the screen.
 
 5. #### Decalre the component in the module
    ##### @NgModel
