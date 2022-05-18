@@ -11,12 +11,16 @@
     - [How to create a component and use it](#how-to-create-a-component-and-use-it)
         - [@NgModel](#ngmodel)
         - [Declaration {}](#declaration-)
-      - [Use CLI to create a component](#use-cli-to-create-a-component)
-      - [Use `template`](#use-template)
-      - [use `styles` or `styleUrls`](#use-styles-or-styleurls)
-      - [attribute selector](#attribute-selector)
-      - [string intepolation](#string-intepolation)
-      - [property binding](#property-binding)
+        - [cli](#cli)
+        - [Use `template`](#use-template)
+        - [use `styles` or `styleUrls`](#use-styles-or-styleurls)
+    - [Selector](#selector)
+        - [Selector define the selector for current component, how it is represented in the HTML DOM.](#selector-define-the-selector-for-current-component-how-it-is-represented-in-the-html-dom)
+      - [Selector as the Element Name](#selector-as-the-element-name)
+      - [Selector as an Attribute](#selector-as-an-attribute)
+      - [Selector as a Class](#selector-as-a-class)
+        - [string intepolation](#string-intepolation)
+    - [Property binding](#property-binding)
       - [property binding vs string interpolation](#property-binding-vs-string-interpolation)
     - [Data Biding](#data-biding)
       - [event biding](#event-biding)
@@ -117,8 +121,8 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 ![](./images/Screen%20Shot%202022-04-30%20at%201.56.10%20PM.png)
 ![](./images/Screen%20Shot%202022-04-30%20at%201.57.39%20PM.png)
 
-#### Use CLI to create a component
-cli
+7. #### Use CLI to create a component
+##### cli
 ![](./images/Screen%20Shot%202022-04-30%20at%203.51.25%20PM.png)
 `server.component.ts`
 ![](./images/Screen%20Shot%202022-04-30%20at%204.27.57%20PM.png)
@@ -128,26 +132,39 @@ browser
 ![](./images/Screen%20Shot%202022-04-30%20at%204.27.19%20PM.png)
 
 
-#### Use `template`
+##### Use `template`
 ![](./images/Screen%20Shot%202022-04-30%20at%206.55.28%20PM.png)
 `template` or `templateUrl` is a must.
 
-#### use `styles` or `styleUrls`
+##### use `styles` or `styleUrls`
 ![](./images/Screen%20Shot%202022-04-30%20at%207.03.48%20PM.png)
 
-#### attribute selector
-![](images/Screen%20Shot%202022-04-30%20at%207.28.33%20PM.png)
-![](./images/Screen%20Shot%202022-04-30%20at%207.24.22%20PM.png)
-![](./images/Screen%20Shot%202022-04-30%20at%204.27.57%20PM.png)
-![](images/Screen%20Shot%202022-04-30%20at%207.25.54%20PM.png)
+### Selector
+##### Selector define the selector for current component, how it is represented in the HTML DOM.
 
-#### string intepolation
+* They are the same as the tag name in the HTML.
+* They are the same as the css selector.
+* They are the same as attribute selector.
+  
+
+
+#### Selector as the Element Name
+![](images/selector/element-selector-declaration.png)
+![](images/selector/element-selector.png)
+#### Selector as an Attribute
+![](images/selector/attribute-selector-declaration.png)
+![](images/selector/attribute-selector.png)
+#### Selector as a Class
+![](images/selector/css-selector-declaration.png)
+![](images/selector/class-selector.png)
+
+##### string intepolation
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.34%20AM.png)
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.39%20AM.png)
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.38%20AM.png)
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.46%20AM.png)
 
-#### property binding
+### Property binding
 ![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.21.50%20AM.png)
 ![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.21.58%20AM.png)
 

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   // styleUrls: ['./app.component.css']
   styles: [`
     h1 {
-      color: dodgerblue;
+      color: steelblue;
     } 
   `]
 })
