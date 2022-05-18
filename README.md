@@ -16,10 +16,10 @@
         - [use `styles` or `styleUrls`](#use-styles-or-styleurls)
     - [Selector](#selector)
         - [Selector define the selector for current component, how it is represented in the HTML DOM.](#selector-define-the-selector-for-current-component-how-it-is-represented-in-the-html-dom)
-      - [Selector as the Element Name](#selector-as-the-element-name)
+      - [Selector as the Element Name(most cases)](#selector-as-the-element-namemost-cases)
       - [Selector as an Attribute](#selector-as-an-attribute)
       - [Selector as a Class](#selector-as-a-class)
-        - [string intepolation](#string-intepolation)
+    - [string intepolation](#string-intepolation)
     - [Property binding](#property-binding)
       - [property binding vs string interpolation](#property-binding-vs-string-interpolation)
     - [Data Biding](#data-biding)
@@ -148,7 +148,7 @@ browser
   
 
 
-#### Selector as the Element Name
+#### Selector as the Element Name(most cases)
 ![](images/selector/element-selector-declaration.png)
 ![](images/selector/element-selector.png)
 #### Selector as an Attribute
@@ -158,7 +158,7 @@ browser
 ![](images/selector/css-selector-declaration.png)
 ![](images/selector/class-selector.png)
 
-##### string intepolation
+### string intepolation
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.34%20AM.png)
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.39%20AM.png)
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.38%20AM.png)
