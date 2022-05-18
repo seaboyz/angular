@@ -1,10 +1,10 @@
 - [Angular](#angular)
     - [RoadMap](#roadmap)
     - [Angular start sequence and how does it work](#angular-start-sequence-and-how-does-it-work)
-      - [1. `main.ts`](#1-maints)
-      - [2. `app.module.ts` - `AppModule`](#2-appmodulets---appmodule)
+      - [1. `main.ts` (connect the AppMoudle with the angular)](#1-maints-connect-the-appmoudle-with-the-angular)
+      - [2. `app.module.ts` <-> `AppModule`(AppModule connects all the components and modules to AppComponet)](#2-appmodulets---appmoduleappmodule-connects-all-the-components-and-modules-to-appcomponet)
       - [3. `app.component.ts` - `AppComponent`](#3-appcomponentts---appcomponent)
-      - [4. `app.compoent.html` and `app.component.css` are injected into `app.component.ts`](#4-appcompoenthtml-and-appcomponentcss-are-injected-into-appcomponentts)
+      - [4. `@Component` conntests `app.component.html` and  `app.component.css` and the `class AppComponent`](#4-component-conntests-appcomponenthtml-and--appcomponentcss-and-the-class-appcomponent)
       - [5. `selector: 'app-root'`  <---> `<app-root></app-root>`](#5-selector-app-root------app-rootapp-root)
       - [6. templateUrl: './app.component.html' <---> `<app-root></app-root>`](#6-templateurl-appcomponenthtml-----app-rootapp-root)
       - [7. component vs template vs module](#7-component-vs-template-vs-module)
@@ -49,7 +49,7 @@ Basic Angular structure(component)
 ### Angular start sequence and how does it work
 `main.ts  >>   app.Module.ts  >>  app.component.ts  >>  index.html  >>  app.component.html `
 
-#### 1. `main.ts`
+#### 1. `main.ts` (connect the AppMoudle with the angular)
 ```typescript
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
@@ -60,31 +60,30 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
   * `main.ts` is the entry point 
 
-  * `main.ts` bootstraps the application with `AppModule`
+  * `main.ts` bootstraps the ***whole application*** with `AppModule`
 ![](images/how-it-works/Screen%20Shot%202022-05-17%20at%2010.32.44%20AM.png)
 ![](./images/main.ts.png)
 
-#### 2. `app.module.ts` - `AppModule`
-
+#### 2. `app.module.ts` <-> `AppModule`(AppModule connects all the components and modules to AppComponet)
 * `AppModule` is the root module of the application.
 * `AppModule` boostraps the with applicaition with `AppCompnent`
 ***This is where Angular replace the `<app-root></app-root>` tag in `index.html`
 ![](./images/app.module.ts.png)
-```typescript
   bootstrap: [AppComponent]
-```
-- it is the way to tell angular witch component you should be aware of when the application starts.
+- this is where AppModule bootraps the `AppComponent`
+- Where the `AppComponent` is the root component of the application
+- `AppComponent` knows all the modules and components declared in the app.module.ts
 
 #### 3. `app.component.ts` - `AppComponent`
 * `AppComponent` is the root component of the application.
+* `@Component` conntests app.component.html and  app.component.css and the logic code in the class
 
-
-#### 4. `app.compoent.html` and `app.component.css` are injected into `app.component.ts`
+#### 4. `@Component` conntests `app.component.html` and  `app.component.css` and the `class AppComponent`
 ![](./images/app.component.ts.png)
 ![](./images/app.component.html.png)
 
 #### 5. `selector: 'app-root'`  <---> `<app-root></app-root>`
-*  selector is the tag that will be used to identify the component other template.
+*  selector is the tag that will be used to identify the component in other template.
 
 #### 6. templateUrl: './app.component.html' <---> `<app-root></app-root>`
 * templateUrl is the path to the template file that will be used to render `<app-root></app-root>`
@@ -93,6 +92,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 ![](./images/browser.png)
 
 #### 7. component vs template vs module
+* `moudule` is injected into the component by `angular`
 ![](images/how-it-works/Lsofi.png) 
 
 ### How to create a component and use it
@@ -103,21 +103,21 @@ platformBrowserDynamic().bootstrapModule(AppModule)
    * The relative path or absolute URL of a template file for an Angular component. If provided, do not supply an inline template using `template`.
 3. #### `selector` 
    - is used to identify each component uniquely into the component tree, and it also defines how the current component is represented in the HTML DOM.
-   - 
+  
 4. #### Component Vs Selector Vs Template
    - Component(AppComponent) is the referce to the component in the application(typescript code).
    - Selector is the reference to the component in the HTML.
    - Template is the HTML that will be rendered to the screen.
 
-5. #### Decalre the component in the module
+5. #### Decalre all components in the module
    ##### @NgModel
-    - The `@NgModel` decorator marks a class as an Angular component and provides configuration metadata that determines how the component should be processed, instantiated, and used at runtime.
+    - The `@NgModule` decorator marks a class as an Angular component and provides configuration metadata that determines how the component should be processed, instantiated, and used at runtime.
    ##### Declaration {}
-    - `declarations:{ AppComponent, ServerComponent}`(this is the way to tell angular that this component is used in the application)
+    - `declarations:{ AppComponent, ServerComponent}`(this is the way to tell `Appcomponent` components are used in the application)
     - `ServerComponent` the class name
 ![](./images/server.component-and-app.module.png)
 
-6. #### Then import it to the `app.module.ts`, then it can be used in `app.component.html`
+1. #### Then import it to the `app.module.ts`, then it can be used in `app.component.html`
 ![](./images/Screen%20Shot%202022-04-30%20at%201.56.10%20PM.png)
 ![](./images/Screen%20Shot%202022-04-30%20at%201.57.39%20PM.png)
 
