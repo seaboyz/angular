@@ -1,5 +1,11 @@
 <div class="container">
-    <h1>Hello from the servers</h1>
+    <h1>Server Name</h1>
+    <p>{{serverName}}</p>
+    <input
+        type="text"
+        class="form-control"
+        (input)="onUpdateServerName($event)"
+    >
     <button
         mat-raised-button
         color="primary"
