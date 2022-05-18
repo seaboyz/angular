@@ -19,7 +19,7 @@
       - [Selector as the Element Name(most cases)](#selector-as-the-element-namemost-cases)
       - [Selector as an Attribute](#selector-as-an-attribute)
       - [Selector as a Class](#selector-as-a-class)
-    - [string intepolation](#string-intepolation)
+    - [String intepolation](#string-intepolation)
     - [Property binding](#property-binding)
       - [property binding vs string interpolation](#property-binding-vs-string-interpolation)
     - [Data Biding](#data-biding)
@@ -158,7 +158,7 @@ browser
 ![](images/selector/css-selector-declaration.png)
 ![](images/selector/class-selector.png)
 
-### string intepolation
+### String intepolation
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.34%20AM.png)
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.39%20AM.png)
 ![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.38%20AM.png)
