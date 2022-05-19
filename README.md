@@ -27,7 +27,8 @@
     - [Data Biding](#data-biding)
       - [event biding](#event-biding)
       - [two-way-data-binding](#two-way-data-binding)
-    - [two-way-data-binding and event-binding works together](#two-way-data-binding-and-event-binding-works-together)
+      - [two-way-data-binding and event-binding works together](#two-way-data-binding-and-event-binding-works-together)
+    - [Template Reference Variables](#template-reference-variables)
 
 # Angular
 
@@ -204,7 +205,7 @@ browser
 3. `serverName` is updated in the template
 ![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.57.17%20AM.png)
 
-### two-way-data-binding and event-binding works together
+#### two-way-data-binding and event-binding works together
 ![](/images/two-way-binding/Screen%20Shot%202022-05-19%20at%2010.42.05%20AM.png)
 ![](/images/two-way-binding/Screen%20Shot%202022-05-19%20at%2011.04.25%20AM.png)
 1. when typing in the event binding input
@@ -222,3 +223,10 @@ browser
   ![](images/two-way-binding/Screen%20Shot%202022-05-19%20at%2011.18.23%20AM.png)
 5. `serverName` is updated in the template
 ![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.57.17%20AM.png)
+
+### Template Reference Variables
+template reference variables are used to access the DOM element.Of course, you can the reference variables for input element, and send the element or the value to the class.
+![](/images/template-variable/Screen%20Shot%202022-05-19%20at%201.28.21%20PM.png)
+![](/images/template-variable/Screen%20Shot%202022-05-19%20at%201.33.36%20PM.png)
+![](images/template-variable/Screen%20Shot%202022-05-19%20at%201.34.37%20PM.png)
+What you log here is the reference variable of the ***Input element***.

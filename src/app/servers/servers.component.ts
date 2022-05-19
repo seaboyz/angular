@@ -34,4 +34,10 @@ export class ServersComponent implements OnInit
     this.serverName = target.value;
   }
 
+  logTemplateVarible(value)
+  {
+    console.log(value)
+
+  }
+
 }

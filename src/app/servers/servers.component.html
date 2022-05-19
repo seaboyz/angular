@@ -19,6 +19,20 @@
         [(ngModel)]="serverName"
     >
     <hr>
+    <!-- template variables -->
+    <h1>Template Variable</h1>
+    <input
+        #templateVariable
+        type="text"
+        class="form-control"
+    >
+    <hr>
+    <button
+        mat-raised-button
+        color="primary"
+        [disabled]="!allowNewServer"
+        (click)="logTemplateVarible(templateVariable)"
+    >Log Template Varible</button>
     <button
         mat-raised-button
         color="primary"
