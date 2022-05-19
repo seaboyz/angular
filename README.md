@@ -181,6 +181,7 @@ browser
 * `state variable `is for state initialization
 * `ngOnInit` is for complex initialization
 * `ngOnInit` is for async initialization
+* `ngOnInit` is only called once
 
 ### Data Biding
 #### event biding
@@ -190,7 +191,7 @@ browser
 ![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.10.00%20AM.png)
 
 #### two-way-data-binding
-![]()
+![](/images/two-way-binding/Screen%20Shot%202022-05-19%20at%2010.42.05%20AM.png)
 ![]()
 ![]()
 ![]()

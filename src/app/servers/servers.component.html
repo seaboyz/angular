@@ -1,11 +1,24 @@
 <div class="container">
-    <h1>Server Name</h1>
+    <!-- string intepolation -->
+    <h1>String Intepolation</h1>
     <p>{{serverName}}</p>
+    <hr>
+    <!-- event binding -->
+    <h1>Event Binding</h1>
     <input
         type="text"
         class="form-control"
         (input)="onUpdateServerName($event)"
     >
+    <hr>
+    <!-- two way binding -->
+    <h1>Two Way Binding</h1>
+    <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="serverName"
+    >
+    <hr>
     <button
         mat-raised-button
         color="primary"
