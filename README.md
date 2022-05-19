@@ -173,7 +173,11 @@ browser
 
 ### Data Biding
 #### event biding
-![](./images/event-binding/Screen%20Shot%202022-05-04%20at%208.10.14%20AM.png)
+![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.08.23%20AM.png)
+![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.08.49%20AM.png)
+![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.09.39%20AM.png)
+![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.10.00%20AM.png)
+
 
 
 #### two-way-data-binding
