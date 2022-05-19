@@ -22,6 +22,8 @@
     - [String intepolation](#string-intepolation)
     - [Property binding](#property-binding)
       - [property binding vs string interpolation](#property-binding-vs-string-interpolation)
+    - [Life cycle hooks](#life-cycle-hooks)
+      - [`contructor` vs `ngOnInit` vs filed declaration(`state variable`)](#contructor-vs-ngoninit-vs-filed-declarationstate-variable)
     - [Data Biding](#data-biding)
       - [event biding](#event-biding)
       - [two-way-data-binding](#two-way-data-binding)
@@ -171,14 +173,21 @@ browser
 #### property binding vs string interpolation
 ![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.55.27%20AM.png)
 
+### Life cycle hooks
+#### `contructor` vs `ngOnInit` vs filed declaration(`state variable`)
+* `constructor` is called before the ngOnInit
+* `constructor` is for service injection
+* `constructor` is for simple initialization
+* `state variable `is for state initialization
+* `ngOnInit` is for complex initialization
+* `ngOnInit` is for async initialization
+
 ### Data Biding
 #### event biding
 ![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.08.23%20AM.png)
 ![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.08.49%20AM.png)
 ![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.09.39%20AM.png)
 ![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.10.00%20AM.png)
-
-
 
 #### two-way-data-binding
 ![]()
