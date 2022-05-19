@@ -1,42 +1,23 @@
 <div class="container">
-    <!-- string intepolation -->
-    <h1>String Intepolation</h1>
-    <p>{{serverName}}</p>
+
+    <h1 *ngIf="serverIsCreated">
+        The Server Name is: {{serverName}}
+    </h1>
+
     <hr>
-    <!-- event binding -->
-    <h1>Event Binding</h1>
+
+    <h1>Input the server name:</h1>
     <input
         type="text"
         class="form-control"
         (input)="onUpdateServerName($event)"
     >
-    <hr>
-    <!-- two way binding -->
-    <h1>Two Way Binding</h1>
-    <input
-        type="text"
-        class="form-control"
-        [(ngModel)]="serverName"
-    >
-    <hr>
-    <!-- template variables -->
-    <h1>Template Variable</h1>
-    <input
-        #templateVariable
-        type="text"
-        class="form-control"
-    >
-    <hr>
+
+    <br>
     <button
         mat-raised-button
         color="primary"
-        [disabled]="!allowNewServer"
-        (click)="logTemplateVarible(templateVariable)"
-    >Log Template Varible</button>
-    <button
-        mat-raised-button
-        color="primary"
-        [disabled]="!allowNewServer"
+        [disabled]="serverName.length===0"
         (click)="onCreateServer()"
     >Click Me!</button>
     <h2>Allow new server: {{allowNewServer}}</h2>

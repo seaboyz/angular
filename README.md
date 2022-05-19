@@ -30,6 +30,7 @@
       - [Two-way-data-binding and Event-binding works together](#two-way-data-binding-and-event-binding-works-together)
     - [Template Reference Variables](#template-reference-variables)
     - [Directives](#directives)
+      - [`ngIf`](#ngif)
 
 # Angular
 
@@ -234,3 +235,6 @@ template reference variables are used to access the DOM element.Of course, you c
 What you log here is the reference variable of the ***Input element***.
 
 ### Directives
+
+#### `ngIf`
+![](images/directives/Screen%20Shot%202022-05-19%20at%203.27.47%20PM.png)
