@@ -29,6 +29,7 @@
       - [two-way-data-binding](#two-way-data-binding)
       - [two-way-data-binding and event-binding works together](#two-way-data-binding-and-event-binding-works-together)
     - [Template Reference Variables](#template-reference-variables)
+    - [Directives](#directives)
 
 # Angular
 
@@ -230,3 +231,5 @@ template reference variables are used to access the DOM element.Of course, you c
 ![](/images/template-variable/Screen%20Shot%202022-05-19%20at%201.33.36%20PM.png)
 ![](images/template-variable/Screen%20Shot%202022-05-19%20at%201.34.37%20PM.png)
 What you log here is the reference variable of the ***Input element***.
+
+### Directives
