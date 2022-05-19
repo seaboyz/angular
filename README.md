@@ -19,15 +19,15 @@
       - [Selector as the Element Name(most cases)](#selector-as-the-element-namemost-cases)
       - [Selector as an Attribute](#selector-as-an-attribute)
       - [Selector as a Class](#selector-as-a-class)
-    - [String intepolation](#string-intepolation)
-    - [Property binding](#property-binding)
-      - [property binding vs string interpolation](#property-binding-vs-string-interpolation)
     - [Life cycle hooks](#life-cycle-hooks)
       - [`contructor` vs `ngOnInit` vs filed declaration(`state variable`)](#contructor-vs-ngoninit-vs-filed-declarationstate-variable)
     - [Data Biding](#data-biding)
-      - [event biding](#event-biding)
-      - [two-way-data-binding](#two-way-data-binding)
-      - [two-way-data-binding and event-binding works together](#two-way-data-binding-and-event-binding-works-together)
+      - [String intepolation](#string-intepolation)
+      - [Property binding](#property-binding)
+      - [Property binding vs string interpolation](#property-binding-vs-string-interpolation)
+      - [Event biding](#event-biding)
+      - [Two-way-data-binding](#two-way-data-binding)
+      - [Two-way-data-binding and Event-binding works together](#two-way-data-binding-and-event-binding-works-together)
     - [Template Reference Variables](#template-reference-variables)
     - [Directives](#directives)
 
@@ -163,18 +163,7 @@ browser
 ![](images/selector/css-selector-declaration.png)
 ![](images/selector/class-selector.png)
 
-### String intepolation
-![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.34%20AM.png)
-![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.39%20AM.png)
-![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.38%20AM.png)
-![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.46%20AM.png)
 
-### Property binding
-![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.21.50%20AM.png)
-![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.21.58%20AM.png)
-
-#### property binding vs string interpolation
-![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.55.27%20AM.png)
 
 ### Life cycle hooks
 #### `contructor` vs `ngOnInit` vs filed declaration(`state variable`)
@@ -187,7 +176,19 @@ browser
 * `ngOnInit` is only called once
 
 ### Data Biding
-#### event biding
+#### String intepolation
+![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.34%20AM.png)
+![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.40.39%20AM.png)
+![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.38%20AM.png)
+![](./images/string-intepolation/Screen%20Shot%202022-05-03%20at%206.43.46%20AM.png)
+
+#### Property binding
+![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.21.50%20AM.png)
+![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.21.58%20AM.png)
+
+#### Property binding vs string interpolation
+![](./images/property-bining/Screen%20Shot%202022-05-03%20at%207.55.27%20AM.png)
+#### Event biding
 1. When typing, trigger the event
 ![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.08.23%20AM.png)
 2. `onUpdateServerName($event)` run
@@ -198,7 +199,7 @@ browser
 ![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.57.17%20AM.png)
 
 
-#### two-way-data-binding
+#### Two-way-data-binding
 1. when typing, `ngModel` reveives the value
 ![](/images/two-way-binding/Screen%20Shot%202022-05-19%20at%2010.59.49%20AM.png)
 2. `ngModel` updates the state variable
@@ -206,7 +207,7 @@ browser
 3. `serverName` is updated in the template
 ![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.57.17%20AM.png)
 
-#### two-way-data-binding and event-binding works together
+#### Two-way-data-binding and Event-binding works together
 ![](/images/two-way-binding/Screen%20Shot%202022-05-19%20at%2010.42.05%20AM.png)
 ![](/images/two-way-binding/Screen%20Shot%202022-05-19%20at%2011.04.25%20AM.png)
 1. when typing in the event binding input
