@@ -27,6 +27,7 @@
     - [Data Biding](#data-biding)
       - [event biding](#event-biding)
       - [two-way-data-binding](#two-way-data-binding)
+    - [two-way-data-binding and event-binding works together](#two-way-data-binding-and-event-binding-works-together)
 
 # Angular
 
@@ -185,14 +186,39 @@ browser
 
 ### Data Biding
 #### event biding
+1. When typing, trigger the event
 ![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.08.23%20AM.png)
+2. `onUpdateServerName($event)` run
 ![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.08.49%20AM.png)
-![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.09.39%20AM.png)
-![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.10.00%20AM.png)
+3. state varible `serverName` is updated
+![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.55.54%20AM.png)
+1. `serverName` is updated in the template
+![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.57.17%20AM.png)
+
 
 #### two-way-data-binding
+1. when typing, `ngModel` reveives the value
+![](/images/two-way-binding/Screen%20Shot%202022-05-19%20at%2010.59.49%20AM.png)
+2. `ngModel` updates the state variable
+![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.55.54%20AM.png)
+3. `serverName` is updated in the template
+![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.57.17%20AM.png)
+
+### two-way-data-binding and event-binding works together
 ![](/images/two-way-binding/Screen%20Shot%202022-05-19%20at%2010.42.05%20AM.png)
-![]()
-![]()
-![]()
-![]()
+![](/images/two-way-binding/Screen%20Shot%202022-05-19%20at%2011.04.25%20AM.png)
+1. when typing in the event binding input
+![](images/two-way-binding/Screen%20Shot%202022-05-19%20at%2011.14.50%20AM.png)
+
+2. trigger the input $event
+![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.08.23%20AM.png)
+3. `onUpdateServerName($event)` run
+![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.08.49%20AM.png)
+4. state varible `serverName` is updated
+![](/images/event-binding/Screen%20Shot%202022-05-19%20at%2010.55.54%20AM.png)
+ * 4.1 `ngModel` reveives the value change from the state variable
+  ![](/images/two-way-binding/Screen%20Shot%202022-05-19%20at%2010.59.49%20AM.png)
+ * 4.2 `ngModel` updates the input
+  ![](images/two-way-binding/Screen%20Shot%202022-05-19%20at%2011.18.23%20AM.png)
+5. `serverName` is updated in the template
+![](images/event-binding/Screen%20Shot%202022-05-19%20at%2010.57.17%20AM.png)
