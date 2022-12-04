@@ -241,3 +241,29 @@ What you log here is the reference variable of the ***Input element***.
 
 #### `ngIf`
 ![](images/directives/Screen%20Shot%202022-05-19%20at%203.27.47%20PM.png)
+
+#### `ngIf else`
+```html
+<div *ngIf="condition; else elseBlock">Content to render when condition is true.</div>
+<ng-template #elseBlock>Content to render when condition is false.</ng-template>
+```
+
+#### `ngStyle`
+* `ngStyle` allows to dynamiclly change the inline styles
+```html
+<some-element [ngStyle]="{'font-style': styleExp}">...</some-element>
+```
+
+#### `ngClass`
+* `ngClass` allows to dynamiclly add or remove the css class from component
+```html
+<some-element [ngClass]="'first second'">...</some-element>
+
+<some-element [ngClass]="['first', 'second']">...</some-element>
+
+<some-element [ngClass]="{'first': true, 'second': true, 'third': false}">...</some-element>
+
+<some-element [ngClass]="stringExp|arrayExp|objExp">...</some-element>
+
+<some-element [ngClass]="{'class1 class2 class3' : true}">...</some-element>
+```
