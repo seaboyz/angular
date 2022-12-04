@@ -235,6 +235,9 @@ template reference variables are used to access the DOM element.Of course, you c
 What you log here is the reference variable of the ***Input element***.
 
 ### Directives
+* `Directives` are Instructions in the DOM.
+* `Components` are directives with template.
+
 
 #### `ngIf`
 ![](images/directives/Screen%20Shot%202022-05-19%20at%203.27.47%20PM.png)
