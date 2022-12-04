@@ -22,4 +22,8 @@
     >Click Me!</button>
     <h2>Allow new server: {{allowNewServer}}</h2>
     <h2 [innerText]="serverCreationStatus"></h2>
+
+    <hr>
+
+    <p *ngFor="let server of servers">{{server}}</p>
 </div>

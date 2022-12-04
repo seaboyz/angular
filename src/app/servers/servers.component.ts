@@ -10,10 +10,13 @@ export class ServersComponent {
   serverName = "";
   serverIsCreated = false;
   serverCreationStatus = "No server was created!";
+  servers: string[] = []
 
   onCreateServer() {
     this.serverIsCreated = true
     this.updateServerCreattionStatus()
+    this.servers.push(this.serverName)
+    this.serverName = ""
   }
 
   updateServerCreattionStatus() {
