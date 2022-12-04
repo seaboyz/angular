@@ -25,5 +25,5 @@
 
     <hr>
 
-    <p *ngFor="let server of servers">{{server}}</p>
+    <p *ngFor="let server of servers; let id = index">{{id+1}}:{{ server}}</p>
 </div>
