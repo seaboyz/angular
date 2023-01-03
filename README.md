@@ -235,6 +235,7 @@ template reference variables are used to access the DOM element.Of course, you c
 What you log here is the reference variable of the ***Input element***.
 
 ### Directives
+![](/images/directives/Screenshot%202023-01-03%20at%2010.33.40%20AM.png)
 * `Directives` are Instructions in the DOM.
 * `Components` are directives with template.
 
